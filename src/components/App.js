@@ -5,7 +5,7 @@ import ComicsPage from '../pages/ComicsPage/ComicsPage';
 import CharactersPage from '../pages/CharactersPage/CharactersPage';
 import CharactersDetailsPage from '../pages/CharactersDetailsPage/CharactersDetailsPage';
 import routes from '../routes';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 const App = () => (
   <BrowserRouter>
