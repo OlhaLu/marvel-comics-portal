@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Navigation from './Navigation/Navigation';
-import ComicsPage from '../pages/ComicsPage/ComicsPage';
-import CharactersPage from '../pages/CharactersPage/CharactersPage';
-import CharactersDetailsPage from '../pages/CharactersDetailsPage/CharactersDetailsPage';
 import routes from '../routes';
 // import logo from './logo.svg';
 
@@ -17,7 +14,19 @@ const App = () => (
           path={routes.CHARACTERS_DETAILS_PAGE}
           component={CharactersDetailsPage}
         />
+        <Route
+          path={routes.COMIC_CHARACTERS_PAGE}
+          component={ComicCharactersPage}
+        />
         <Route path={routes.CHARACTERS_PAGE} component={CharactersPage} />
+        <Route
+          path={routes.CHARACTER_DETAILS_PAGE}
+          component={CharacterDetailsPage}
+        />
+        <Route
+          path={routes.CHARACTER_COMICS_PAGE}
+          component={CharacterComicsPage}
+        />
         <Redirect to={routes.COMICS_PAGE} />
       </Switch>
     </div>
